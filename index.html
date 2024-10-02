@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+
+            <div class="marquee-container">
+                <div class="marquee">
+                    <span>Mehak's Portfolio</span>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+   <!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="container">
+        <div class="home-content">
+            <!-- Rounded Image in Center -->
+           
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Mehak Banu , a passionate Web Developer</p>
+            <img src="m2.jpg" alt="Your Image" class="rounded-image">
+        </div>
+    <div class="social-icons">
+            <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mehak-banu-401291230" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mehakbanu24" target="_blank"><i class="fab fa-github"></i></a>
+    </div>    
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated developer with a strong foundation in cloud computing, software development, and problem-solving. Currently pursuing a degree in [Your Degree] at [Your University], I have hands-on experience with various cloud platforms, programming languages, and development frameworks. I enjoy creating efficient and scalable applications that solve real-world problems.
+        </p>
+        <p>
+            My journey in technology started with a curiosity for how software works and has grown into a passion for building robust systems. I thrive in collaborative environments and am always eager to learn and adopt new technologies.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <p>
+                    Developed a full-stack e-commerce web application using React for the frontend and Node.js for the backend. Integrated MongoDB for the database and implemented secure payment gateways to ensure safe transactions.
+                </p>
+                <a href="https://github.com/yourprofile/e-commerce" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Social Media Platform</h3>
+                <p>
+                    Built a scalable social networking site using Django, featuring user authentication, a dynamic news feed, and a real-time messaging system. Deployed the application on AWS for high availability.
+                </p>
+                <a href="https://github.com/yourprofile/social-media" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Cloud Deployment Automation</h3>
+                <p>
+                    Created automation scripts using Python and Bash to streamline the deployment of applications on AWS. Utilized Terraform for infrastructure as code and Docker for containerization.
+                </p>
+                <a href="https://github.com/yourprofile/cloud-automation" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Whether you have a question, project idea, or just want to say hello, feel free to reach out.</p>
+        <form action="mailto:mbkns24@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:mehakbanu024@gmail.com">mbkns24@gmail.com</a></p>
+            <!-- <p>Phone: +123 456 7890</p> -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>You can view or download my resume below:</p>
+        <a href="resume.pdf" target="_blank" class="resume-button">Download Resume</a>
+    </section>
+
+    <!-- Footer with Social Icons -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Mehak Banu. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/mehak-banu-401291230/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mehakbanu24" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
