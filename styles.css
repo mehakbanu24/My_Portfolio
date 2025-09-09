@@ -19,7 +19,7 @@ header::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: url('bg1.jpeg') center/cover no-repeat;
+    background: url('./assets/images/bg1.jpeg') center/cover no-repeat;
     filter: blur(8px);
     z-index: -1; /* Send it behind content */
     transform: scale(1.1); /* Prevent edges showing after blur */
