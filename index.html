@@ -1,155 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehak Banu | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehak Banu | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-
 <body>
-    <!-- Header Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <img src="./assets/images/m2.jpg" alt="Mehak Banu" class="profile-img">
-            <h1>Mehak Banu</h1>
-            <p>Software Developer | Software Tester</p>
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Motivated Software Developer with strong skills in Java, MySQL, Linux, and shell scripting. Experienced in building and deploying applications using Docker, CI/CD pipelines, and AWS services. Skilled in manual and automation testing with Selenium, ensuring quality and reliability. Passionate about designing scalable systems, automating workflows, and delivering high-performance, thoroughly tested software solutions.</p>
-                <a href="./assets/resume/Mehak Banu R.pdf" class="btn" target="_blank">Download Resume</a>
-            </div>
-        </div>
-    </section>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <div class="nav-center">
+      <h1>Mehak Banu</h1>
+      <p>Software Developer</p>
+    </div>
+    <div class="nav-right">
+      <a href="https://www.linkedin.com/in/mehak-banu-401291230/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/mehakbanu24" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="mailto:mehakbanu024@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+  </header>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card" style="--clr:#FF6F61;">
-                <h3>Operating System & Scripting</h3>
-                <p>Linux (Server setup, Deployment), Shell Scripting (Automation, Task Scheduling)</p>
-            </div>
-            <div class="skill-card" style="--clr:#42A5F5;">
-                <h3>Core Java</h3>
-                <p>OOP Concepts, Access Modifiers, Constructors, Polymorphism, Inheritance, Abstraction</p>
-            </div>
-            <div class="skill-card" style="--clr:#66BB6A;">
-                <h3>Cloud Computing</h3>
-                <p>AWS (EC2, S3, IAM), IBM Cloud, DevOps basics (Git, CI/CD)</p>
-            </div>
-            <div class="skill-card" style="--clr:#FFA726;">
-                <h3>SQL</h3>
-                <p>DDL, DML, DQL, Relational Schema Design, Self JOINs</p>
-            </div>
-            <div class="skill-card" style="--clr:#AB47BC;">
-                <h3>Testing</h3>
-                <p>SDLC, STLC, Manual Testing, Selenium WebDriver Automation</p>
-            </div>
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Mehak Banu</h1>
+    <p>Get to know about me</p>
+  </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2 class="section-title">Work Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="bi bi-terminal"></i></div>
-                <div class="timeline-content">
-                    <h3>Teamware Solution – Intern</h3>
-                    <span class="timeline-date">Jul 2025 - Sep 2025</span>
-                    <p>Worked on Linux automation, MySQL CRUD operations, Dockerized applications, and provisioned AWS EC2 instances using AWS CLI.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="bi bi-bug"></i></div>
-                <div class="timeline-content">
-                    <h3>Rooman Technologies – Beta Tester</h3>
-                    <span class="timeline-date">Jan 2025 - Mar 2025</span>
-                    <p>Tested Incube LMS platform, reported bugs, and ensured module stability through structured QA process.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="bi bi-code-slash"></i></div>
-                <div class="timeline-content">
-                    <h3>KodNest – Web Development Intern</h3>
-                    <span class="timeline-date">Sep 2024 - Nov 2024</span>
-                    <p>Built a static website using HTML, CSS, and JavaScript as part of a team project focusing on front-end development.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="bi bi-check-circle"></i></div>
-                <div class="timeline-content">
-                    <h3>ProInterns – Beta Tester</h3>
-                    <span class="timeline-date">Apr 2022 - Sep 2022</span>
-                    <p>Validated client websites, reported bugs, ensured cross-browser functionality, and provided UI/UX improvement feedback.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-box">
-                <i class="bi bi-cloud-arrow-up-fill"></i>
-                <h3>AutoDeploy – CI/CD on AWS</h3>
-                <p>Deployed a resume website on AWS EC2 using Apache2 with a custom GitHub Actions CI/CD pipeline for automated deployment.</p>
-            </div>
-            <div class="project-box">
-                <i class="bi bi-box"></i>
-                <h3>Dockerized Login Application</h3>
-                <p>Built a responsive login system using HTML, CSS, and JS. Containerized it with Docker for consistent local deployment.</p>
-            </div>
-            <div class="project-box">
-                <i class="bi bi-airplane-engines"></i>
-                <h3>Airlines Ticket Booking Platform</h3>
-                <p>Developed a DBMS-based platform supporting user login, admin panel, and CRUD operations for flights and bookings.</p>
-            </div>
-            <div class="project-box">
-                <i class="bi bi-robot"></i>
-                <h3>Job Search Automation</h3>
-                <p>Automated Naukri.com login and job search with Selenium WebDriver in Java to save time and improve job search efficiency.</p>
-            </div>
-            <div class="project-box">
-                <i class="bi bi-laptop"></i>
-                <h3>Portfolio Website</h3>
-                <p>Designed and deployed a personal portfolio website using HTML and CSS, showcasing projects and skills.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mehakbanu024@gmail.com">mehakbanu024@gmail.com</a></p>
-        <p>Phone: +91 9036282310</p>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
         <p>
-            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/your-github" target="_blank">GitHub</a>
+          Motivated <span class="highlight">Software Developer</span> with strong skills in 
+          <span class="highlight">Java, MySQL, Linux</span>, and <span class="highlight">shell scripting</span>.
+          Experienced in building and deploying applications using 
+          <span class="highlight">Docker, CI/CD pipelines</span>, and <span class="highlight">AWS services</span>.
+          Skilled in <span class="highlight">manual and automation testing with Selenium</span>, 
+          ensuring quality and reliability. Passionate about designing scalable systems, 
+          automating workflows, and delivering high-performance, thoroughly tested software solutions.
         </p>
-    </section>
+        <a href="./assets/resume/Mehak Banu R.pdf" class="btn-download" target="_blank">Download Resume</a>
+      </div>
+      <div class="about-image">
+        <img src="./assets/images/m1.jpeg" alt="Mehak Banu">
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Mehak Banu | Portfolio</p>
-    </footer>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+    <h2 class="section-title-center">Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card"> 
+            <h3>Operating System & Scripting</h3>
+            <p>Linux (Server setup, Deployment), Shell Scripting (Automation, Task Scheduling)</p>
+        </div>
+        <div class="skill-card"> 
+            <h3>Core Java</h3>
+            <p>OOP Concepts, Access Modifiers, Constructors, Polymorphism, Inheritance, Abstraction</p>
+        </div>
+        <div class="skill-card"> 
+            <h3>Cloud Computing</h3>
+            <p>AWS (EC2, S3, IAM), IBM Cloud, DevOps basics (Git, CI/CD)</p>
+        </div>
+        <div class="skill-card"> 
+            <h3>SQL</h3>
+            <p>DDL, DML, DQL, Relational Schema Design, Self JOINs</p>
+        </div>
+        <div class="skill-card"> 
+            <h3>Testing</h3>
+            <p>SDLC, STLC, Manual Testing, Selenium WebDriver Automation</p>
+        </div>
+    </div>
+</section>
+
+<!-- WORK EXPERIENCE -->
+<section id="experience" class="experience-section">
+    <h2 class="section-title-center">Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="bi bi-terminal"></i></div>
+            <div class="timeline-content">
+                <h3>Teamware Solution – Intern</h3>
+                <span class="timeline-date">Jul 2025 - Sep 2025</span>
+                <p>Worked on Linux automation, MySQL CRUD operations, Dockerized applications, and provisioned AWS EC2 instances using AWS CLI.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="bi bi-bug"></i></div>
+            <div class="timeline-content">
+                <h3>Rooman Technologies – Beta Tester</h3>
+                <span class="timeline-date">Jan 2025 - Mar 2025</span>
+                <p>Tested Incube LMS platform, reported bugs, and ensured module stability through structured QA process.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="bi bi-code-slash"></i></div>
+            <div class="timeline-content">
+                <h3>KodNest – Web Development Intern</h3>
+                <span class="timeline-date">Sep 2024 - Nov 2024</span>
+                <p>Built a static website using HTML, CSS, and JavaScript as part of a team project focusing on front-end development.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="bi bi-check-circle"></i></div>
+            <div class="timeline-content">
+                <h3>ProInterns – Beta Tester</h3>
+                <span class="timeline-date">Apr 2022 - Sep 2022</span>
+                <p>Validated client websites, reported bugs, ensured cross-browser functionality, and provided UI/UX improvement feedback.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+    <h2 class="section-title-center">Projects</h2>
+    <div class="projects-grid">
+        <div class="project-box">
+            <i class="bi bi-cloud-arrow-up-fill"></i>
+            <h3>AutoDeploy – CI/CD on AWS</h3>
+            <p>Deployed a resume website on AWS EC2 using Apache2 with a custom GitHub Actions CI/CD pipeline for automated deployment.</p>
+        </div>
+        <div class="project-box">
+            <i class="bi bi-box"></i>
+            <h3>Dockerized Login Application</h3>
+            <p>Built a responsive login system using HTML, CSS, and JS. Containerized it with Docker for consistent local deployment.</p>
+        </div>
+        <div class="project-box">
+            <i class="bi bi-airplane-engines"></i>
+            <h3>Airlines Ticket Booking Platform</h3>
+            <p>Developed a DBMS-based platform supporting user login, admin panel, and CRUD operations for flights and bookings.</p>
+        </div>
+        <div class="project-box">
+            <i class="bi bi-robot"></i>
+            <h3>Job Search Automation</h3>
+            <p>Automated Naukri.com login and job search with Selenium WebDriver in Java to save time and improve job search efficiency.</p>
+        </div>
+        <div class="project-box">
+            <i class="bi bi-laptop"></i>
+            <h3>Portfolio Website</h3>
+            <p>Designed and deployed a personal portfolio website using HTML and CSS, showcasing projects and skills.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Mehak Banu | Portfolio</p>
+</footer>
+
 </body>
-
 </html>
