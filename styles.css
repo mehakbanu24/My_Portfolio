@@ -64,7 +64,7 @@ header.navbar {
 .hero {
     position: relative;
     height: 100vh; /* full screen */
-    background: url('./assets/images/mbg2.jpeg') center center / cover no-repeat;
+   /* background: url('./assets/images/mbg2.jpeg') center center / cover no-repeat; */
     display: flex;
     justify-content: center;
     align-items: center;
