@@ -207,11 +207,13 @@ header.navbar {
 .skill-card:hover {
     transform: translateY(-6px);
 }
-.skill-card:nth-child(1) { background: #FF6F61; }
-.skill-card:nth-child(2) { background: #42A5F5; }
-.skill-card:nth-child(3) { background: #66BB6A; }
-.skill-card:nth-child(4) { background: #FFA726; }
-.skill-card:nth-child(5) { background: #AB47BC; }
+/* UPDATED: colours now repeat every 6 cards so every card in every section is coloured */
+.skill-card:nth-child(6n+1) { background: #FF6F61; }
+.skill-card:nth-child(6n+2) { background: #42A5F5; }
+.skill-card:nth-child(6n+3) { background: #66BB6A; }
+.skill-card:nth-child(6n+4) { background: #FFA726; }
+.skill-card:nth-child(6n+5) { background: #AB47BC; }
+.skill-card:nth-child(6n)   { background: #26A69A; }
 
 /* TIMELINE */
 .section-title-center {
@@ -312,3 +314,110 @@ footer {
     .hero-content p { font-size: 1rem; }
     .skills-grid, .projects-grid { gap: 15px; }
 }
+
+/* ===================== NEW ADDITIONS ===================== */
+
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 110px; } /* keeps headings clear of the fixed navbar */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}
+
+/* Navbar: six links need a little less spacing on mid-size screens */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .nav-left a { margin: 0 7px; font-size: 0.85rem; }
+}
+
+/* Hero buttons (white and outlined so they stand out on the orange overlay) */
+.hero-content { padding: 0 20px; }
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 26px;
+}
+.hero-actions .btn-download {
+    background: #fff;
+    color: #e68900;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.hero-actions .btn-ghost {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 28px;
+    box-shadow: none;
+}
+.hero-actions .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); }
+
+/* About */
+.about-text .currently-building { font-size: 1rem; margin-bottom: 22px; }
+
+/* Experience bullet lists */
+.timeline-list { margin: 10px 0 0 18px; padding: 0; text-align: left; }
+.timeline-list li { margin-bottom: 6px; line-height: 1.55; font-size: 0.95rem; }
+
+/* Projects */
+.sub-heading { margin-top: 50px; font-size: 1.6rem; }
+.project-subtitle { font-weight: 500; color: #555; margin-bottom: 8px; }
+.project-box p { line-height: 1.6; }
+.project-thumb { display: block; width: 100%; height: auto; border-radius: 8px; margin-bottom: 14px; }
+.project-status {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #e68900;
+    padding: 3px 12px;
+    margin: 4px 0 8px;
+    border-radius: 999px;
+    border: 1px solid #ff9800;
+    background: #fff3e0;
+}
+.tech-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 14px; }
+.tech-tags span {
+    font-size: 0.78rem;
+    color: #555;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+}
+.project-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: 600;
+    color: #e68900;
+    text-decoration: none;
+    border-bottom: 1px solid #ff9800;
+}
+.project-link:hover { color: #ff9800; }
+.project-box .project-link i { font-size: 1rem; color: inherit; margin: 0 4px 0 0; }
+
+/* Certifications / achievements */
+.skill-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.skill-card h3 i { margin-right: 6px; }
+.cert-badge { display: block; max-width: 64px; height: auto; margin: 0 auto 10px; }
+
+/* Contact */
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; padding: 0 20px 20px; }
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #555;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+.contact-links a i { color: #ff9800; font-size: 1.2rem; }
+.contact-links a:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12); }
+
+/* Keyboard focus */
+a:focus-visible { outline: 3px solid #fff200; outline-offset: 3px; }
+.contact-links a:focus-visible, .project-link:focus-visible { outline-color: #ff9800; }
